@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ReadyRebel</string>
+    <string name="menu">Menu</string>
+    <string name="home">Home</string>
+    <string name="setting">Settings</string>
+    <string name="contact">Contact</string>
+    <string name="Saved">saved</string>
+    <string name="rebel">Talk to Rebel</string>
+    <string name="change">Change Avatar</string>
+    <string name="open">Open Navigation Bar</string>
+    <string name="close">Close Navigation Bar</string>
+    <string name="rebelName">Rebel</string>
+</resources>

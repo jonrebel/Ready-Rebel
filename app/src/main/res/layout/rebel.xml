@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/sunnyday"
+    tools:context=".Rebel">
+
+    <ImageView
+        android:layout_width="248dp"
+        android:layout_height="246dp"
+        android:layout_above="@id/input"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/artist"
+        android:id="@+id/avatar"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:id="@+id/input"
+        app:helperText="Talk to Rebel"
+        app:endIconMode="clear_text"
+        android:gravity="top"
+        android:background="@drawable/round"
+        android:hint="Type Here"
+        android:layout_alignEnd="@+id/send"/>
+
+
+    <ImageButton
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:src="@drawable/send"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:contentDescription="send"
+        android:background="?attr/selectableItemBackgroundBorderless"/>
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/avatar">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="365dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cloudy"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/response"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="120dp"
+            android:inputType="textMultiLine"
+            android:maxEms="15"
+            android:maxLines="4" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

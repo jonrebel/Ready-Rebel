@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+
+    <LinearLayout
+        android:id="@+id/reb_response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_margin="0dp">
+        <TextView
+            android:id="@+id/reb_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:paddingBottom="2dp"
+            android:text="@string/rebelName"/>
+        <TextView
+            android:id="@+id/reb_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round"
+            android:backgroundTint="#FF5722"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:textIsSelectable="true"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/hum_response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="0dp"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/hum_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:paddingBottom="2dp"
+            android:text="You"/>
+        <TextView
+            android:id="@+id/hum_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round"
+            android:backgroundTint="#FFC107"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:textIsSelectable="true"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
