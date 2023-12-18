@@ -130,9 +130,11 @@ public class Rebel extends Fragment {
     }
 
     public void addResponse(String response){
+        messages.remove(messages.size()-1);
         addToMessages(response,MessageModel.SENT_BY_REB);
     }
     public void callAPI(String input) throws JSONException {
+        messages.add(new MessageModel("Typing...",MessageModel.SENT_BY_REB));
         JSONObject body = new JSONObject();
         try {
             body.put("model", "gpt-3.5-turbo");
@@ -150,7 +152,7 @@ public class Rebel extends Fragment {
         RequestBody rb = RequestBody.create(body.toString(),JSON);
         Request request = new Request.Builder()
                 .url("https://api.openai.com/v1/chat/completions")
-                .header("Authorization", "Bearer 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")
+                .header("Authorization", "Bearer sk-uDyq8assKmQVfjh04kFXQs7Z")
                 .post(rb)
                 .build();
         client.newCall(request).enqueue(new Callback() {
